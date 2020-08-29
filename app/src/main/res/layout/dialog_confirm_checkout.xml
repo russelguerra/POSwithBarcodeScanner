@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_green">
+
+    <TextView
+        android:id="@+id/tTotal"
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="8dp"
+        android:text="Total: 0.0"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tChange"
+        style="@style/CardView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@color/green"
+        android:padding="8dp"
+        android:text="Change: 0.0"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTotal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/etCash"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Cash"
+            android:inputType="numberDecimal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCash"
+            android:layout_margin="4dp">
+
+            <Button
+                android:id="@+id/btOkay"
+                style="@style/CardView.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_green"
+                android:text="Confirm/Print Receipt"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

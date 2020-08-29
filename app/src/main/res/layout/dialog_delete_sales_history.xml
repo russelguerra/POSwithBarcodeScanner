@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_delete">
+
+    <TextView
+        android:id="@+id/tName"
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/warning"
+        android:text="Delete Record:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tPrice"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tName"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="This record will be permanently deleted. Confirm?" />
+
+    <Button
+        android:id="@+id/btOkay"
+        style="@style/CardView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tPrice"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_red"
+        android:text="Confirm Delete"
+        android:textStyle="bold" />
+
+</RelativeLayout>

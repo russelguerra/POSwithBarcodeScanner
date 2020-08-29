@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity.NewCustomerActivity">
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00E676"
+        android:padding="4dp"
+        android:text="Add New Customer"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:gravity="center"
+        android:hint="Customer's Name"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/tWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_alignParentStart="true"
+        android:layout_margin="4dp"
+        android:layout_toLeftOf="@id/btAdd"
+        android:padding="4dp"
+        android:text="Customer's name already added. \nInsert a unique name."
+        android:textColor="@color/warning"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_delete"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tName"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Item Name: Sample Item Name" />
+
+    <TextView
+        android:id="@+id/tPrice"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tName"
+        android:gravity="center"
+        android:text="Price: P3.0" />
+
+    <Button
+        android:id="@+id/btOkay"
+        style="@style/CardView.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tPrice"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_red"
+        android:text="Delete Item"
+        android:textStyle="bold" />
+</RelativeLayout>

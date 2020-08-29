@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/t2"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tPrice"
+            android:text="P"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tPrice"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="100.0"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tName"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/t2"
+            android:paddingEnd="4dp"
+            android:text="Sample Item Name Na Mahaba" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tName"
+            android:text="Barcode: "
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tBarcode"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tName"
+            android:layout_toRightOf="@id/text"
+            android:text="49283021"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

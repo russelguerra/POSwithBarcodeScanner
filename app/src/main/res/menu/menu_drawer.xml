@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Main">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/cashier"
+                    android:icon="@drawable/ic_cashier_bw"
+                    android:title="Cashier" />
+
+                <item
+                    android:id="@+id/transactions"
+                    android:icon="@drawable/ic_view_list_black_24dp"
+                    android:title="Transaction Records" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

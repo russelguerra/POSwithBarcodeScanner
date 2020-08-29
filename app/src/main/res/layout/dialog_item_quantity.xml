@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_info">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tName"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/t1"
+            android:paddingEnd="4dp"
+            android:text="Add New Customer"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tBarcode"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tName"
+            android:text="Barcode"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tPrice"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="100.0"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t1"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tPrice"
+            android:text="P"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tPrice"
+            android:layout_toLeftOf="@id/tTotalPrice"
+            android:text="'@'P"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tTotalPrice"
+            style="@style/CardView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tPrice"
+            android:layout_alignParentEnd="true"
+            android:text="0.0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Quantity"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etQuantity">
+
+            <Button
+                android:id="@+id/btOkay"
+                style="@style/CardView.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_green"
+                android:text="Add to Cart"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btUpdate"
+                style="@style/CardView.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_info"
+                android:layout_centerHorizontal="true"
+                android:text="Update Item"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btDelete"
+                style="@style/CardView.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_red"
+                android:text="Delete Item"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
